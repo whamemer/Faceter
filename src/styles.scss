@@ -5,9 +5,99 @@ html, body
     box-sizing: border-box;
 }
 
-h1
+.container
 {
-    margin-left: 10px;
-    color: #f12;
-    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+    &__logo
+    {
+        cursor: pointer;
+    }
+
+    &__navigation
+    {
+        font-size: 18px;
+        line-height: 19.8px;
+        display: flex;
+        gap: 50px;
+
+        a
+        {
+            text-decoration: none;
+        }
+
+        a:hover
+        {
+            border-bottom: 2px solid rgba(0, 118, 254, 1);
+            transition: .3s ease;
+        }
+
+        .navigation-text-active
+        {
+            font-weight: 600;
+            color: #0076FE;
+        }
+
+        .navigation-text
+        {
+            font-weight: 500;
+            color: #002033;
+        }
+    }
+
+    &__buttons
+    {
+        display: flex;
+        gap: 10px;
+
+        .header__start__for__free
+        {
+            width: 210px;
+            height: 58px;
+            border: none;
+            font: inherit;
+            color: inherit;
+            background-color: transparent;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .header__signin
+        {
+            width: 100px;
+            height: 58px;
+            border: 1px solid rgba(0, 118, 254, 1);
+            border-radius: 20px;
+            background-color: #fff;
+            cursor: pointer;
+
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #0076FE;
+        }
+    }
+}
+
+.banner
+{
+    width: 1380px;
+    height: 656px;
+    background-color: #0076FE;
+    border-radius: 40px;
+    margin: 0 auto;
+
+    
 }
