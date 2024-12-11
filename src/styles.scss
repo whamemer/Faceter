@@ -677,6 +677,7 @@ html, body
     width: 1360px;
     height: 2185px;
     margin: 0 auto;
+    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -931,6 +932,117 @@ html, body
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.whatcanfaceter
+{
+    width: 1440px;
+    height: 547px;
+    margin: 0 auto;
+
+    &__title
+    {
+        display: flex;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        color: #002033;
+        margin-bottom: 60px;
+    }
+
+    &__content
+    {
+        display: flex;
+        gap: 40px;
+
+        .whatcanfaceter-content-line
+        {
+            width: 2px;
+            height: 286px;
+            background-color: #9C9C9C;
+            position: relative;
+            z-index: 1000;
+
+            .whatcanfaceter-content-subline-top
+            {
+                width: 4px;
+                height: 120px;
+                left: -1px;
+                background-color: #0076FE;
+                border-radius: 3px;
+                position: absolute;
+                z-index: 2000;
+            }
+
+            .whatcanfaceter-content-subline-center
+            {
+                display: none;
+                width: 4px;
+                height: 120px;
+                top: 86px;
+                left: -1px;
+                background-color: #0076FE;
+                border-radius: 3px;
+                position: absolute;
+                z-index: 2000;
+            }
+        }
+
+        .whatcanfaceter-content-buttons
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-right: 47px;
+
+            .whatcanfaceter-button
+            {
+                width: 466px;
+                height: 66px;
+                border: none;
+                background-color: #0076FE;
+                border-radius: 20px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 16px 30px;
+ 
+                .whatcanfaceter-button-text
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 170.4%;
+                    color: #fff;
+                }
+
+                .button-text-main
+                {
+                    display: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 170.4%;
+                    color: #fff;
+                }
+            }
+
+            .whatcanfaceter-button.active
+            {
+                width: 466px;
+                height: 117px;
+                justify-content: space-between;
+
+                .button-text-main
+                {
+                    display: flex;
+                    justify-content: flex-start;
                 }
             }
         }
