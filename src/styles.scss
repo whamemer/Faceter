@@ -1249,6 +1249,7 @@ html, body
     width: 1381px;
     height: 756px;
     margin: 0 auto;
+    padding-bottom: 90px;
 
     &__header
     {
@@ -1417,6 +1418,16 @@ html, body
                 }
             }
 
+            .ourrates-content-block-header.fixed
+            {
+                background-color: #0076FE;
+
+                .ourrates-content-block-header-time, .ourrates-content-block-header-name-title
+                {
+                    color: #fff;
+                }
+            }
+
             .ourrates-content-block-text
             {
                 display: flex;
@@ -1430,6 +1441,48 @@ html, body
                 font-weight: 500;
                 line-height: 28px;
                 color: #002033;
+            }
+
+            .ourrates-content-block-text.fixed
+            {
+                margin-bottom: 14px;
+            }
+
+            .ourrates-content-block-day-buttons-block
+            {
+                width: 400px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding: 4px 4px;
+                background-color: #0076FE;
+                border-radius: 12px;
+                margin: 0 0 60px 20px;
+
+                .ourrates-content-block-day-buttons
+                {
+                    width: 56px;
+                    height: 18px;
+                    border: none;
+                    background-color: #0076FE;
+                    cursor: pointer;
+
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    color: #fff;
+                }
+
+                .ourrates-content-block-day-buttons.active
+                {
+                    width: 69px;
+                    height: 32px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    color: #002033;
+                }
             }
 
             .ourrates-content-block-list
@@ -1497,8 +1550,16 @@ html, body
 
                 .ourrates-content-block-footer-text
                 {
-                    // WHAMER: TODO
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: #002033;
                 }
+            }
+
+            .ourrates-content-block-footer.fixed
+            {
+                margin-bottom: 20px;
             }
         }
     }
