@@ -1048,3 +1048,194 @@ html, body
         }
     }
 }
+
+.howtoconnect
+{
+    width: 1380px;
+    height: 467px;
+    margin: 0 auto;
+
+    &__header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .howtoconnect-header-title-text
+        {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 60px;
+            color: #002033;
+            margin-bottom: 70px;
+
+            .howtoconnect-header-title-text-blue
+            {
+                color: #0076FE;
+            }
+        }
+    }
+
+    &__content
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .howtoconnect-content-left
+        {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+
+            .howtoconnect-content-left-image
+            {
+                height: 51px;
+                margin-bottom: 25%;
+            }
+
+            .howtoconnect-content-left-block
+            {
+                display: flex;
+                flex-direction: column;
+
+                .howtoconnect-content-left-text
+                {
+                    width: 233px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    color: #002033;
+                    margin-bottom: 36px;
+                }
+
+                .howtoconnect-content-left-button
+                {
+                    width: 278px;
+                    height: 54px;
+                    border: none;
+                    background-color: #0076FE;
+                    border-radius: 15px;
+                    cursor: pointer;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+        }
+
+        .howtoconnect-content-center
+        {
+            font-size: 60px;
+            font-weight: 900;
+            line-height: 60px;
+            color: #002033;
+            opacity: 3%;
+            padding: 0 80px 0 37px;
+        }
+
+        .howtoconnect-content-right
+        {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+
+            .howtoconnect-content-right-image
+            {
+                height: 51px;
+                margin-bottom: 25%;
+            }
+
+            .howtoconnect-content-right-block
+            {
+                display: flex;
+                flex-direction: column;
+
+                .howtoconnect-content-right-text
+                {
+                    width: 233px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    color: #002033;
+                    margin-bottom: 36px;
+                }
+
+                .howtoconnect-content-right-button
+                {
+                    width: 315px;
+                    height: 54px;
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    border-radius: 15px;
+                    cursor: pointer;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #0076FE;
+
+                    position: relative;
+
+                    .howtoconnect-content-right-button-warning
+                    {
+                        position: absolute;
+                        right: 2%;
+                        top: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer__title
+    {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #0076FE;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+
+    }
+
+    &__footer
+    {
+        display: flex;
+        gap: 62px;
+        padding-bottom: 90px;
+
+        .howtoconnect-footer-block
+        {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .howtoconnect-footer-left, .howtoconnect-footer-right
+        {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background-color: #0076FE;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+}
