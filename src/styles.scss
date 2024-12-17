@@ -48,11 +48,17 @@ html, body
         {
             font-weight: 500;
             color: #002033;
+            transition: 0.3s ease;
         }
 
         .navigation-text.active
         {
             font-weight: 600;
+            color: #0076FE;
+        }
+
+        .navigation-text:hover
+        {
             color: #0076FE;
         }
     }
@@ -207,7 +213,7 @@ html, body
 
             width: 271px;
             height: 62px;
-            margin: 0 128%;
+            margin: 0 120%;
             border: none;
             color: #0076FE;
             background-color: #fff;
@@ -380,10 +386,12 @@ html, body
         {
             width: 327px;
             height: 580px;
-            border: 1px solid #FC0C35;
+            border: 1px solid #0076FE;
             border-radius: 40px;
             position: relative;
             z-index: 1000;
+            cursor: pointer;
+            transition: 0.3s ease;
 
             .slidebar-block-header
             {
@@ -398,7 +406,7 @@ html, body
                     font-size: 20px;
                     font-weight: 600;
                     line-height: 30px;
-                    color: #FC0C35;
+                    color: #0076FE;
                 }
             }
 
@@ -429,7 +437,7 @@ html, body
             {
                 width: 327px;
                 height: 59px;
-                background-color: #FC0C35;
+                background-color: #0076FE;
                 border-radius: 0px 0px 40px 40px;
                 position: absolute;
                 z-index: 0;
@@ -437,18 +445,21 @@ html, body
             }
         }
 
-        .slidebar-block.active
+        .slidebar-block:hover
         {
-            border: 1px solid #0076FE;
+            border: 1px solid #FC0C35;
+            box-shadow: 0 3px 3px rgba(0,0,0,0.5);
 
             .slidebar-block-title-text
             {
-                color: #0076FE;
+                color: #FC0C35;
+                transition: 0.3s ease;
             }
 
             .slidebar-content-footer
             {
-                background-color: #0076FE;
+                background-color: #FC0C35;
+                transition: 0.3s ease;
             }
         }
     }
@@ -566,6 +577,11 @@ html, body
                 }
             }
 
+            .content-block:hover
+            {
+                box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+            }
+
             .content-block.fixed
             {
                 display: flex;
@@ -667,11 +683,12 @@ html, body
             padding: 15px 30px;
             background: none;
             border: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: 17px;
+            border-radius: 17px;    
             cursor: pointer;
+            transition: 0.3s ease;
         }
 
-        .pressa-button.active
+        .pressa-button:hover
         {
             border: 1px solid #0076FE;
         }
@@ -816,7 +833,7 @@ html, body
                         font-weight: 600;
                         line-height: 75px;
                         color: #0076FE;
-                        margin: 30px 0 20px 0;
+                        margin: 15px 0 20px 0;
                     }
 
                     .center-block-content-all
@@ -824,7 +841,7 @@ html, body
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        gap: 20px;
+                        gap: 10px;
     
                         .center-block-content
                         {
@@ -1570,7 +1587,6 @@ html, body
 .whycloudvideocam
 {
     width: 1380px;
-    //height: 700px;
     margin: 0 auto;
     padding-bottom: 90px;
 
@@ -1598,13 +1614,10 @@ html, body
 
         .whycloudvideocam-content-blocks
         {
-            width: 1379px;
-            max-height: 365px;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #0076FE;
-            border-radius: 30px;
-            padding: 15px 20px;
+            width: 1421px;
+            max-height: 50px;
+            overflow: hidden;
+            border-bottom: 2px solid #0076FE;
             cursor: pointer;
 
             .whycloudvideocam-content-block-top
@@ -1657,6 +1670,18 @@ html, body
                     color: #002033;
                 }
             }
+        }
+
+        .whycloudvideocam-content-blocks.active
+        {
+            width: 1379px;
+            max-height: 365px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #0076FE;
+            border-radius: 30px;
+            padding: 15px 20px;
+            cursor: pointer;
         }
     }
 }
